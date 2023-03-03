@@ -389,7 +389,7 @@ void BifOptions::SetRegInitFileName(std::string filename)
     std::ifstream f(filename.c_str());
     if (!f) 
     {
-        LOG_ERROR("Cannot read file - %s", regInitFile.c_str());
+        LOG_ERROR("Cannot read file - %s", filename.c_str());
     }
     regInitFile = filename;
     LOG_TRACE("Setting Register initialization file as %s", regInitFile.c_str());
